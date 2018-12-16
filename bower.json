@@ -1,0 +1,20 @@
+{
+  "name": "mironi",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "jquery": "^3.3.1",
+    "bootstrap": "3.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

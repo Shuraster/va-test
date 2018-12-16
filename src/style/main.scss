@@ -1,0 +1,26 @@
+/*
+* Third Party
+*/
+@import "../../bower_components/css-reset/reset.min.css";
+@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+@import "../../bower_components/slick-carousel/slick/slick-theme.css";
+@import "../../bower_components/slick-carousel/slick/slick.css";
+@import "../../bower_components/slickNav/slicknav.css";
+
+@import "partials/app";
+
+@font-face {
+    font-family: 'futura_bold';
+    src: url(../fonts/FuturaPTBold.otf);
+}
+
+@font-face {
+    font-family: 'futura_demi';
+    src: url(../fonts/FuturaPTDemi.otf);
+}
+
+@font-face {
+    font-family: 'futura_medium';
+    src: url(../fonts/FuturaPTMedium.otf);
+}

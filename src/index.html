@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Информация об Авторе и описание проекта -->
+	<meta name="description" content="Интернет-магазин MIRONI">
+	<meta name="author" content="Александра Черникова">
+
+		<!-- Иконка, которая будет на вкладке в браузере -->
+	<link rel="icon" href="img/peace.ico">
+	<!-- Заголовок на вкладке в браузере -->
+	<title>MIRONI</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet"> 
+</head> 
+<body>
+    <header class="header">
+            <div class="container">
+                    <div class="row">
+                        //= template/header.html
+                    </div>
+            </div>
+    </header>
+
+<section class="topSlider">
+    //= template/slider.html
+</section>
+
+
+    <section class="shop">
+                //= template/collection.html
+    </section> 
+    
+    
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                //= template/footer.html
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+            $('.mainSlider').slick({
+                arrows: false,
+                slidesToShow: 1,
+                slideToScroll: 1,
+                dots: true,
+                customPaging: function(slider, i) {
+        var thumb = $(slider.$slides[i]).data('thumb');
+        return '<a class="dot"></a>';
+    }
+            })
+    })
+    </script>
+
+    <script>
+        $(function(){
+            $('#menu').slicknav();
+        });
+    </script>
+</body>
+</html>
